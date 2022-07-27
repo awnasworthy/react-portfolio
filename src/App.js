@@ -10,15 +10,35 @@ import Portfolio from './components/Portfolio';
 
 function App() {
 
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
     <Header />
-    <Nav/>
-    <About/>
+    <Nav
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
+      <main>
+        {!contactSelected ? (
+          <>
+          <div>
+            <About/>
+            </div>
+            <Portfolio/>
+            <Resume/>
+            
+          </>
+        ) : (
+          <Contact></Contact>
+        )}
+        <Footer/>
+      </main>
+    {/* <About/>
     <Portfolio/>
-    <Resume/>
-    <Contact/>
-    <Footer/>
+    
+    <Contact/> 
+     */}
     </div>
   );
 }

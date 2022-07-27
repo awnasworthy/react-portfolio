@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
-const Nav = () => {
+const Nav = (props) => {
+  const {
+    categories = [],
+    contactSelected,
+    setCurrentCategory,
+    currentCategory,
+    setContactSelected,
+  } = props;
   return (
     <div>
       <header>
@@ -13,22 +19,22 @@ const Nav = () => {
       <nav>
         <ul className='flex-row'>
           <li>
-            <a data-testid='about-me' href='#about-me'>
+            <a data-testid='about-me' href='#about-me' onClick={() => setContactSelected(false)}>
               About Me
             </a>
           </li>
           <li>
-            <a data-testid='portfolio' href='#portfolio'>
+            <a data-testid='portfolio' href='#portfolio' onClick={() => setContactSelected(false)}>
               Portfolio
             </a>
           </li>
           <li>
-            <a data-testid='resume' href='#resume'>
+            <a data-testid='resume' href='#resume' onClick={() => setContactSelected(false)}>
               Resume
             </a>
           </li>
           <li>
-            <a data-testid='contact' href='#contact'>
+            <a data-testid='contact' href='#contact' onClick={() => setContactSelected(true)}>
               Contact
             </a>
           </li>

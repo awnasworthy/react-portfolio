@@ -80,8 +80,10 @@ header nav ul li a {
 }
 
 .about-me img {
-  width: 35%;
-  float: left;
+  width: 700px;
+  height: 600px;
+  object-fit: contain;
+
 }
 
 .about-me p {
@@ -96,4 +98,8 @@ header nav ul li a {
 .contact-me p {
   text-align: center;
   padding: 30px 0px 0px 0px;
+}
+
+.navActive {
+  color: var(--tertiary-color);
 }
