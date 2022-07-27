@@ -1,38 +1,99 @@
-.App {
+:root {
+  --primary-color: #403d58;
+  --secondary-color: #9a8c98;
+  --tertiary-color: #7fc7c1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header and Nav Bar Style*/
+
+header {
+  padding: 20px 35px;
+  background-color: #403d58;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: var(--tertiary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.title {
+  text-align: center;
+  padding: 10px;
+  font-size: 55px;
+  border-bottom: 2px solid #9a8c98;
+}
+
+.about-me div {
+  display: block;
+  align-content: center;
+  width: 900px;
+  margin: auto;
+  background: #fff;
+  color: var(--primary-color);
+  overflow: auto;
+  padding: 15px;
+}
+
+.about-me img {
+  width: 35%;
+  float: left;
+}
+
+.about-me p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume p {
+  text-align: center;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-me p {
+  text-align: center;
+  padding: 30px 0px 0px 0px;
 }
