@@ -1,57 +1,51 @@
 import React, { useState } from 'react';
+import runbuddy from '../../assets/images/runbuddy.png';
+import throwback from '../../assets/images/throwback.png';
+import mydreampassport from '../../assets/images/mydreampassport.png';
+import budget from '../../assets/images/budgettracker.PNG';
+import ecommerce from '../../assets/images/ecommerce.PNG';
+import weather from '../../assets/images/WeatherDashScreenshot.PNG';
 
 const Projects = () => {
 
-const [currentProject, setCurrentProject] = useState();
-
-const [projects] = useState ([
-    {
-        name: 'RunBuddy',
-        github: 'https://github.com/awnasworthy/RunBuddy',
-        deploy: 'https://awnasworthy.github.io/RunBuddy/',
-        image: 'mydreampassport'
-    },
-    {
-        name: 'The Throwback Generator',
-        github: 'https://github.com/awnasworthy/throwback-generator',
-        deploy: 'https://awnasworthy.github.io/throwback-generator/',
-        image: 'mydreampassport'
-    },
-    {
-        name: 'My Dream Passport',
-        github: 'https://github.com/ElleAK/My-Dream-Passport',
-        deploy: 'https://my-dream-passport.herokuapp.com/',
-        image: 'mydreampassport'
-    },
-    {
-        name: 'Budget Tracker',
-        github: 'https://github.com/awnasworthy/budget-tracker',
-        deploy: 'https://enigmatic-dusk-30595.herokuapp.com/',
-        image: 'mydreampassport'
-    },
-    {
-        name: 'The Weather Dashboard',
-        github: 'https://github.com/awnasworthy/weather-dashboard',
-        deploy: 'https://awnasworthy.github.io/weather-dashboard/',
-        image: 'mydreampassport'
-    },
-    {
-        name: 'Ecommerce Back End',
-        github: 'https://github.com/awnasworthy/ecommerce',
-        deploy: 'See Github for Demo',
-        image: 'mydreampassport'
-    }
-]);
-
 return (
-    <div>
-        {projects.map((project) => (
+    <div className='projects'>
             <div>
-                <h2>{ project.name }</h2>
-                <p>Find the Repo <a href={ project.github } target="_blank">here!</a> </p>
-                <p>Project Deployed <a href={ project.deploy } target="_blank">here!</a></p>
+                <img src={runbuddy}/>
+                <h2>Run Buddy</h2>
+                <p>Find the Repo <a href='https://github.com/awnasworthy/RunBuddy' target="_blank">here!</a> </p>
+                <p>Project Deployed <a href='https://awnasworthy.github.io/RunBuddy/' target="_blank">here!</a></p>
             </div>
-        ))}
+            <div>
+                <img src={throwback}/>
+                <h2>The Throwback Generator</h2>
+                <p>Find the Repo <a href='https://github.com/awnasworthy/throwback-generator' target="_blank">here!</a> </p>
+                <p>Project Deployed <a href='https://awnasworthy.github.io/throwback-generator/' target="_blank">here!</a></p>
+            </div>
+            <div>
+                <img src={mydreampassport}/>
+                <h2>My Dream Passport</h2>
+                <p>Find the Repo <a href='https://github.com/ElleAK/My-Dream-Passport' target="_blank">here!</a> </p>
+                <p>Project Deployed <a href='https://my-dream-passport.herokuapp.com/' target="_blank">here!</a></p>
+            </div>
+            <div>
+                <img src={budget}/>
+                <h2>Budget Tracker</h2>
+                <p>Find the Repo <a href='https://github.com/awnasworthy/budget-tracker' target="_blank">here!</a> </p>
+                <p>Project Deployed <a href='https://enigmatic-dusk-30595.herokuapp.com/' target="_blank">here!</a></p>
+            </div>
+            <div>
+                <img src={weather}/>
+                <h2>The Weather Dashboard</h2>
+                <p>Find the Repo <a href='https://github.com/awnasworthy/weather-dashboard' target="_blank">here!</a> </p>
+                <p>Project Deployed <a href='https://awnasworthy.github.io/weather-dashboard/' target="_blank">here!</a></p>
+            </div>
+            <div>
+                <img src={ecommerce}/>
+                <h2>Ecommerce Back End</h2>
+                <p>Find the Repo <a href='https://github.com/awnasworthy/ecommerce' target="_blank">here!</a> </p>
+                <p>See GitHub for demo video!</p>
+            </div>
     </div>
 )
 

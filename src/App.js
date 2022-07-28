@@ -24,10 +24,13 @@ function App() {
           <>
           <div>
             <About/>
-            </div>
+          </div>
+          <div>
             <Portfolio/>
+          </div>
+          <div>
             <Resume/>
-            
+          </div>
           </>
         ) : (
           <Contact></Contact>
