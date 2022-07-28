@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.dce96101.css",
-    "main.js": "/react-portfolio/static/js/main.62f30f14.js",
+    "main.js": "/react-portfolio/static/js/main.0d361ded.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/runbuddy.png": "/react-portfolio/static/media/runbuddy.4858450d4356db7f5162.png",
     "static/media/myface.jpg": "/react-portfolio/static/media/myface.0122d155372be026d657.jpg",
@@ -10,15 +10,16 @@
     "static/media/CodingResume.pdf": "/react-portfolio/static/media/CodingResume.5fc1316b7c49d8c52793.pdf",
     "static/media/ecommerce.PNG": "/react-portfolio/static/media/ecommerce.e50f4d4a954ef24d8f99.PNG",
     "static/media/WeatherDashScreenshot.PNG": "/react-portfolio/static/media/WeatherDashScreenshot.e1cd46ea28a12d41a8ec.PNG",
+    "static/media/fk3.PNG": "/react-portfolio/static/media/fk3.4aa0a03d40ca202e9fb7.PNG",
     "static/media/budgettracker.PNG": "/react-portfolio/static/media/budgettracker.753776594527a192e0e7.PNG",
     "static/media/mydreampassport.png": "/react-portfolio/static/media/mydreampassport.01b66e51201df1e43fa5.png",
     "index.html": "/react-portfolio/index.html",
     "main.dce96101.css.map": "/react-portfolio/static/css/main.dce96101.css.map",
-    "main.62f30f14.js.map": "/react-portfolio/static/js/main.62f30f14.js.map",
+    "main.0d361ded.js.map": "/react-portfolio/static/js/main.0d361ded.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dce96101.css",
-    "static/js/main.62f30f14.js"
+    "static/js/main.0d361ded.js"
   ]
 }
